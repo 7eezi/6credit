@@ -16,7 +16,7 @@ bot.on('ready', () =>{
 
 bot.on('message', message => {
     if (message.author.bot) return;
-    if (message.content.startsWith(".s")) {
+    if (message.content.startsWith(".6s")) {
     if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('You dont have ADMINISTRATOR permission');
     var args = message.content.trim().split(/ +/g).slice(1);
     let cname = args[0];
